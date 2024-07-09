@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #212121;
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 30px;
+    display: flex;
+   
+    
+}
+
+h1{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    color: #ffffff;
+    font-size: 30px;
+}
+input{
+    color: #ffffff;
+    border-radius: 5px;
+    border: solid;
+    height: 27px;
+    padding-left: 10px;
+    
+}
+.caixa{
+border: mediumspringgreen solid ;
+border-radius: 10px;
+margin-right: 30%;
+margin-left: 30%;
+height: 490px;
+padding: 10px;
+color: #ffffff;
+
+}
+select{
+    margin-bottom: 20px;
+    color: #ffffff;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid;
+
+}
+button {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 95.02px;
+    height: 42.66px;
+    border: none;
+    background-color: #3653f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+  }
+  
+  .button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: mediumspringgreen solid 0.15em;
+    border-radius: 0.25em;
+    color: mediumspringgreen;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+  }
+  
+  .button p {
+    z-index: 1;
+  }
+  
+  .button:hover {
+    color: #212121;
+  }
+  
+  .button:active {
+    border-color: teal;
+  }
+  
+  .button::after, .button::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: mediumspringgreen;
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .button::before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  
+  .button::after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  
+  .button:hover:before {
+    transform: translateX(-1em);
+  }
+  
+  .button:hover:after {
+    transform: translateX(1em);
+  }
+  
+  .button:active:before,
+  .button:active:after {
+    background: teal;
+  }
+
+  .button-container{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 170px;
+    right: 33%; 
+  }
+ 
+  .button-container{
+    display: flex;
+    align-content: center;
+  }
