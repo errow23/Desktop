@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --font-size: 10px
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navBar a {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navBar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.home-content {
+    background: url("./img/home-img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.Home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 35rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.content p {
+    color: #fff;
+    font-size: 2, 5rem;
+    font-weight: 200;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title{
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.title span{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--black);
+}
+
+.about .row .content h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.about .row .content p{
+   font-size: 1rem;
+   color: #fff;
+   line-height: 1.8;
+}
+
+ .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+.Menu .box-container .box{
+    text-align: center;
+    border: solid var(--main-color);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+.Menu .box-container .box img{
+    height: 7rem;
+}
+.Menu .box-container .box h2{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.Menu .box-container .box .price{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.Menu .box-container .box .price span{
+    font-size: 1rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.Menu .box-container .box .btn{
+    font-size: 1rem;
+}
+h1{
+color: #fff;
+font-size: 3rem;
+text-align: center;
+padding-bottom: 2rem;
+
+}
+.Menu h1 span{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.Menu .box-container .box:hover{
+    background-color: #fff;
+}
+.Menu .box-container .box:hover>*{
+    color: var(--black);
+}
+.review .box-container.box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.comentarios .box-container.box p{
+    font-size: 1rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.5;
+}
+.box-d .imgp{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+
+}
+
+.box-d{
+    text-align: center;
+    border: solid var(--main-color); 
+}
+.box-d p{
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.5rem;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share img{
+    cursor: pointer;
+    margin: 0.3rem;
+    border-radius: 50%;
+}
+.footer .share img:hover{
+    background-color: var(--main-color);
+    padding: 1rem;
+
+}
+
+
+
